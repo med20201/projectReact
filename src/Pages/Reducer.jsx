@@ -1,10 +1,11 @@
 import initialState from './../Components/Assets/all_product'
 
-const Reducer = (state = initialState, action) => {
+const Reducer = (state = initialState.products, action) => {
   switch (action.type) {
-    case "Add":
+    case 'ADD_PRODUCT':
       return {
         ...state,
+        products: [...state.products, action.payload],
       };
     
     default:

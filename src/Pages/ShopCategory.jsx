@@ -1,9 +1,11 @@
 import "./CSS/ShopCategory.css";
 import Item from "../Components/Item/Item";
 import { useSelector } from "react-redux";
+import Navbar from "../Components/Navbar/Navbar";
 const ShopCategory = (props) => {
   const all_product =useSelector((state)=>state);
   return (
+    <><Navbar/>
     <div className="shop-category">
     
       <p>{props.category}</p>
@@ -26,7 +28,7 @@ const ShopCategory = (props) => {
           }
         })}
       </div>
-    </div>
+    </div></>
   );
 };
 

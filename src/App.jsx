@@ -12,7 +12,7 @@ import ShopContextProvider from "./Context/ShopContext";
 import Admin from "./Pages/Pages/Admin/Admin";
 import AddProduct from "./Pages/Components/AddProduct/AddProduct";
 import ListProduct from "./Pages/Components/ListProduct/ListProduct";
-
+import Navbar from './Components/Navbar/Navbar';
 const App = () => { 
 
 const router = createBrowserRouter([
@@ -68,6 +68,7 @@ const router = createBrowserRouter([
 
 return (
   <ShopContextProvider>
+    
      <RouterProvider router={router} />
   </ShopContextProvider>
 )
